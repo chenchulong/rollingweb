@@ -1,6 +1,7 @@
 .headbody{
-  width: 1024px;
+  width: 1200px;
   margin: 0 auto;
+  font-size: 16px;
 }
 .logo{
   text-align: left;
@@ -8,13 +9,6 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
 }
 
 @keyframes App-logo-spin {

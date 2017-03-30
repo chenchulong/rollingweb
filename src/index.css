@@ -9,3 +9,18 @@ body {
 .ant-layout-header{
   padding: 0!important;
 }
+
+.header{
+   height: 80px;
+   background: #fff;
+}
+.content{
+  border-top: 1px solid #efefef;
+  margin-top: -1px; 
+}
+.footer{
+   height: 80px;
+   background: #fff;
+   text-align: center;
+   margin-top: 10px;
+}

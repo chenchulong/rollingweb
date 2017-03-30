@@ -1,9 +1,14 @@
 .newsContent{
-  padding-top: 5px;
-  width: 1024px;
+  width: 1200px;
   margin:0 auto;
+  margin-top:5px;
   padding-bottom: 30px;
+  background: #fff;
+  padding: 10px 20px;
   text-align: left;
+}
+.colapse{
+    font-size: 16px;
 }
 
 .newsContent h1{

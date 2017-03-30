@@ -1,8 +1,10 @@
 
 .productContent{
-  padding-top: 5px;
-  width: 1024px;
+  width: 1200px;
+  background: #fff;
   margin:0 auto;
+  margin-top:5px;
+  padding-top:10px;
   padding-bottom: 30px;
 }
 

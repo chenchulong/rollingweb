@@ -27,10 +27,10 @@ class Products extends React.Component<null, null> {
     return (
       <div className="App">
         <Layout>
-          <Header style={{ height: 80, background: '#fff' }}>
+          <Header className="header">
             <MyHeader />
           </Header>
-          <Content style={{ background: '#fff', borderTop: '1px solid #efefef', marginTop: -1 }}>
+          <Content className="content">
             <div className="productContent">
               <Row>
                 <Col span={6}>
@@ -95,11 +95,11 @@ class Products extends React.Component<null, null> {
               </Row>
             </div>
           </Content>
-          <Footer style={{ height: 80, textAlign: 'center', marginTop: 10 }}>
+          <Footer className="footer">
             版权所有 © 2017 XiaoChen
           </Footer>
         </Layout>
-      </div>
+      </div >
     );
   }
 }

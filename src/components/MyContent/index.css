@@ -1,0 +1,25 @@
+.bodyContent{
+  width: 1024px;
+  margin:0 auto;
+  margin-top:5px;
+}
+.bg{
+  height: 320px!important;
+  width: 100%;
+  background-position:buttom;
+}
+
+.ant-card-head-title{
+  text-align: left;
+}
+.ant-card-body{
+  text-align: left;
+  padding: 10px!important;
+}
+.ant-card-head{
+  padding: 0 10px!important;
+}
+
+.hide{
+  display: none;
+}

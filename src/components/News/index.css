@@ -1,0 +1,21 @@
+.newsContent{
+  padding-top: 5px;
+  width: 1024px;
+  margin:0 auto;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.newsContent h1{
+    text-align: left;
+    margin-top:10px;
+}
+
+.newsContent p{
+    text-indent:2em;
+}
+
+.newsContent .date{
+    text-align: right;
+    color: #333;
+}

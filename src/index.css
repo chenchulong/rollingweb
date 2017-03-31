@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Hiragino Sans GB","STHeiti","Microsoft Yahei"
 }
 
 .ant-layout-header{
@@ -16,11 +16,12 @@ body {
 }
 .content{
   border-top: 1px solid #efefef;
+  background:#fff;
   margin-top: -1px; 
 }
 .footer{
    height: 80px;
-   background: #fff;
+   background: #efefef;
    text-align: center;
    margin-top: 10px;
 }

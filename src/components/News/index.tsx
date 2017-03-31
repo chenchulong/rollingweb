@@ -16,7 +16,7 @@ const newslist = NewsJson.map((item, key) => (
 
 import MyHeader from './../MyHeader';
 
-class AboutUs extends React.Component<null, null> {
+class News extends React.Component<null, null> {
   render() {
     return (
       <div className="App">
@@ -43,4 +43,4 @@ class AboutUs extends React.Component<null, null> {
   }
 }
 
-export default AboutUs;
+export default News;

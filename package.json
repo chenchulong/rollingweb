@@ -23,7 +23,6 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "predeploy": "npm run build",
-    // 加上这个之后，执行后，会把发布的版本发送到分支上。
     "deploy": "gh-pages -d build"
   },
   "homepage": "https://chenchulong.github.io/rollingweb/"

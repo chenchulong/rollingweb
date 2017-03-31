@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router';
 import './index.css';
 import { Menu, Row, Col } from 'antd';
-const logo = require('./logo.svg');
+const logo = require('./logo.jpg');
 
 class MyHeader extends React.Component<any, any> {
   constructor() {
@@ -33,12 +33,12 @@ class MyHeader extends React.Component<any, any> {
     return (
       <div className="headbody">
         <Row>
-          <Col span={4}>
+          <Col span={6}>
             <div className="logo" >
               <img src={logo} className="App-logo" alt="logo" />
             </div>
           </Col>
-          <Col span={20}>
+          <Col span={18}>
             <Menu
               mode="horizontal"
               style={{ height: 80, lineHeight: '80px', float: 'right' }}

@@ -19,9 +19,12 @@ import MyHeader from './../MyHeader';
 class News extends React.Component<any, any> {
   constructor() {
     super();
-    var newid = "1";
-    var searchKey = window.location.search.split('=');
-    newid = searchKey[1];
+    var newid = '1';
+
+    if(window.location.search != ''){
+      var searchKey = window.location.search.split('=');
+      newid = searchKey[1];
+    }
 
     this.state = {
       newid

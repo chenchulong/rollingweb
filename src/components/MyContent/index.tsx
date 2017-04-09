@@ -14,7 +14,7 @@ const carouselList = CarouselJson.map((item, key) =>
 
 ///新闻数据
 const newslist = NewsJson.map((item, key) => (
-  <Link to={"/news?id=" + item.id} key={key} className={key < 10 ? 'show' : 'hide'}>
+  <Link to={'/news?id=' + item.id} key={key} className={key < 10 ? 'show' : 'hide'}>
     <p style={{ lineHeight: '25px', fontSize: '14px' }}>{item.title}
       <span style={{ float: 'right', color: '#333' }}> {item.date}</span>
     </p>

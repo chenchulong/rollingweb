@@ -9,14 +9,15 @@ class MyHeader extends React.Component<any, any> {
     super();
     var current = '1';
     ///导航选中样式
-    switch (window.location.hash) {
-      case '#/about':
+    
+    switch (window.location.pathname) {
+      case '/about':
         current = '2';
         break;
-      case '#/products':
+      case '/products':
         current = '3';
         break;
-      case '#/news':
+      case '/news':
         current = '4';
         break;
       default:

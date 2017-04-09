@@ -6,12 +6,6 @@ import AboutUs from './components/AboutUs';
 import Products from './components/Products';
 import News from './components/News';
 import './index.css';
-import { useRouterHistory } from 'react-router'
-import { createHashHistory } from 'history'
-
-const history = useRouterHistory(createHashHistory)({
-  // basename: '/rollingweb'
-})
 
 const routes = [{
   path: '/',
@@ -28,8 +22,7 @@ const routes = [{
 }];
 
 const app = hake({
-   routes,
-   history
+   routes
  });
 
 app.start();

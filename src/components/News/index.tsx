@@ -16,7 +16,18 @@ const newslist = NewsJson.map((item, key) => (
 
 import MyHeader from './../MyHeader';
 
-class News extends React.Component<null, null> {
+class News extends React.Component<any, any> {
+  constructor() {
+    super();
+    var newid = "1";
+    var searchKey = window.location.search.split('=');
+    newid = searchKey[1];
+
+    this.state = {
+      newid
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -29,7 +40,7 @@ class News extends React.Component<null, null> {
               <h1>
                 最新动态
               </h1>
-              <Collapse className="colapse" bordered={false} defaultActiveKey={['1']}>
+              <Collapse className="colapse" bordered={false} defaultActiveKey={[this.state.newid]}>
                 {newslist}
               </Collapse>
             </div>

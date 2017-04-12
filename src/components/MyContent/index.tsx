@@ -28,6 +28,16 @@ class MyContent extends React.Component<null, null> {
         <Carousel autoplay={true} style={{ height: '320px' }}>
           {carouselList}
         </Carousel>
+        <div>
+          <Row>
+            <Col span={8} style={{ background: '#000000', height: '5px' }}>
+            </Col>
+            <Col span={8} style={{ background: '#FF0000', height: '5px' }}>
+            </Col>
+            <Col span={8} style={{ background: '#FFCC00', height: '5px' }}>
+            </Col>
+          </Row>
+        </div>
         <div style={{ padding: '10px 0' }}>
           <Row>
             <Col span={8} style={{ padding: 10 }}>

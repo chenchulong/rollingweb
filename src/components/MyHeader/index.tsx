@@ -9,7 +9,7 @@ class MyHeader extends React.Component<any, any> {
     super();
     var current = '1';
     ///导航选中样式
-    
+
     switch (window.location.pathname) {
       case '/about':
         current = '2';
@@ -40,6 +40,13 @@ class MyHeader extends React.Component<any, any> {
             </div>
           </Col>
           <Col span={18}>
+            <div style={{ float: 'right',lineHeight:'80px' }}>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang"><span>中文</span></button>
+              &nbsp;
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang"><span>繁体</span></button>
+              &nbsp;
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang"><span>EN</span></button>
+            </div>
             <Menu
               mode="horizontal"
               style={{ height: 80, lineHeight: '80px', float: 'right' }}

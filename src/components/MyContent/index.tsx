@@ -1,9 +1,7 @@
 import * as React from 'react';
 import './index.css';
 import { Carousel, Card, Row, Col } from 'antd';
-import { Link } from 'react-router';
 import CarouselJson from './../../data/carouseljson';
-import NewsJson from './../../data/newsjson';
 
 ///轮播图数据
 const carouselList = CarouselJson.map((item, key) =>
@@ -13,13 +11,13 @@ const carouselList = CarouselJson.map((item, key) =>
 );
 
 ///新闻数据
-const newslist = NewsJson.map((item, key) => (
+/*const newslist = NewsJson.map((item, key) => (
   <Link to={'/news?id=' + item.id} key={key} className={key < 10 ? 'show' : 'hide'}>
     <p style={{ lineHeight: '25px', fontSize: '14px' }}>{item.title}
       <span style={{ float: 'right', color: '#333' }}> {item.date}</span>
     </p>
   </Link>
-));
+));*/
 
 class MyContent extends React.Component<null, null> {
   render() {
@@ -41,8 +39,11 @@ class MyContent extends React.Component<null, null> {
         <div style={{ padding: '10px 0' }}>
           <Row>
             <Col span={8} style={{ padding: 10 }}>
-              <Card title="最新动态" bordered={false} >
+              {/*<Card title="最新动态" bordered={false} >
                 {newslist}
+              </Card>*/}
+              <Card title="主推产品" bordered={false}>
+                <img style={{ width: '100%', height: 245 }} src="http://www.sonystyle.com.cn/products/cyber-shot/images/reddot_award_230x172(1).jpg" />
               </Card>
             </Col>
             <Col span={8} style={{ padding: 10 }}>

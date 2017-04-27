@@ -2,14 +2,15 @@ import * as React from 'react';
 import { Link } from 'react-router';
 import './index.css';
 import { Menu, Row, Col } from 'antd';
+import lang from '../../data/lang'
+import CookiesFunction from '../../utils/cookies'
 const logo = require('./logo.jpg');
 
 class MyHeader extends React.Component<any, any> {
   constructor() {
     super();
-    var current = '1';
+    let current = '1';
     ///导航选中样式
-
     switch (window.location.pathname) {
       case '/about':
         current = '2';
@@ -30,6 +31,12 @@ class MyHeader extends React.Component<any, any> {
     };
   }
 
+  setLang = (e: any) => {
+    let locals = e.target.className;
+    new CookiesFunction().setCookie('language', locals, 3600)
+    window.location.reload()
+  }
+
   render() {
     return (
       <div className="headbody">
@@ -40,12 +47,12 @@ class MyHeader extends React.Component<any, any> {
             </div>
           </Col>
           <Col span={18}>
-            <div style={{ float: 'right',lineHeight:'80px' }}>
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang"><span>中文</span></button>
+            <div style={{ float: 'right', lineHeight: '80px' }}>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span className="zh_cn">中文</span></button>
               &nbsp;
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang"><span>繁体</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span className="zh_tw">繁体</span></button>
               &nbsp;
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang"><span>EN</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span className="en">EN</span></button>
             </div>
             <Menu
               mode="horizontal"
@@ -53,7 +60,7 @@ class MyHeader extends React.Component<any, any> {
               selectedKeys={[this.state.current]}
             >
               <Menu.Item key="1">
-                <Link to="/">首页</Link>
+                <Link to="/">{lang.nav.index}</Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to="/about">关于我们</Link>

@@ -32,9 +32,11 @@ class MyHeader extends React.Component<any, any> {
   }
 
   setLang = (e: any) => {
-    let locals = e.target.className;
-    new CookiesFunction().setCookie('language', locals, 3600)
-    window.location.reload()
+    let locals = e.target.id
+    if (locals) {
+      new CookiesFunction().setCookie('language', locals, 3600)
+      window.location.reload()
+    }
   }
 
   render() {
@@ -48,11 +50,11 @@ class MyHeader extends React.Component<any, any> {
           </Col>
           <Col span={18}>
             <div style={{ float: 'right', lineHeight: '80px' }}>
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span className="zh_cn">中文</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" id="zh_cn" onClick={this.setLang}><span id="zh_cn">中文</span></button>
               &nbsp;
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span className="zh_tw">繁体</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" id="zh_tw" onClick={this.setLang}><span id="zh_tw">繁体</span></button>
               &nbsp;
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span className="en">EN</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" id="en" onClick={this.setLang}><span id="en">EN</span></button>
             </div>
             <Menu
               mode="horizontal"
@@ -63,13 +65,13 @@ class MyHeader extends React.Component<any, any> {
                 <Link to="/">{lang.nav.index}</Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/about">关于我们</Link>
+                <Link to="/about">{lang.nav.about}</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <Link to="/products">产品</Link>
+                <Link to="/products">{lang.nav.product}</Link>
               </Menu.Item>
               <Menu.Item key="4">
-                <Link to="/news">最新动态</Link>
+                <Link to="/news">{lang.nav.news}</Link>
               </Menu.Item>
             </Menu>
           </Col>

@@ -2,6 +2,7 @@ import * as React from 'react';
 import './index.css';
 import { Carousel, Card, Row, Col } from 'antd';
 import CarouselJson from './../../data/carouseljson';
+import lang from '../../data/lang'
 
 ///轮播图数据
 const carouselList = CarouselJson.map((item, key) =>
@@ -42,17 +43,17 @@ class MyContent extends React.Component<null, null> {
               {/*<Card title="最新动态" bordered={false} >
                 {newslist}
               </Card>*/}
-              <Card title="主推产品" bordered={false}>
+              <Card title={lang.content.mainProduct} bordered={false}>
                 <img style={{ width: '100%', height: 245 }} src="http://www.sonystyle.com.cn/products/cyber-shot/images/reddot_award_230x172(1).jpg" />
               </Card>
             </Col>
             <Col span={8} style={{ padding: 10 }}>
-              <Card title="主推产品" bordered={false}>
+              <Card title={lang.content.mainProduct} bordered={false}>
                 <img style={{ width: '100%', height: 245 }} src="http://www.sonystyle.com.cn/products/cyber-shot/images/reddot_award_230x172(1).jpg" />
               </Card>
             </Col>
             <Col span={8} style={{ padding: 10 }}>
-              <Card title="主推产品2" bordered={false}>
+              <Card title={lang.content.mainProduct} bordered={false}>
                 <img style={{ width: '100%', height: 245 }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_3eeqyJmqEJlAJEAXdRxhrr8dyFgAZfNVgP3H4puXf6uNSu8a" />
 
               </Card>

@@ -50,11 +50,11 @@ class MyHeader extends React.Component<any, any> {
           </Col>
           <Col span={18}>
             <div style={{ float: 'right', lineHeight: '80px' }}>
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" id="zh_cn" onClick={this.setLang}><span id="zh_cn">中文</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span id="zh_cn">中文</span></button>
               &nbsp;
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" id="zh_tw" onClick={this.setLang}><span id="zh_tw">繁体</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span id="zh_tw">繁体</span></button>
               &nbsp;
-              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" id="en" onClick={this.setLang}><span id="en">EN</span></button>
+              <button type="button" className="ant-btn ant-btn-ghost ant-btn-sm lang" onClick={this.setLang}><span id="en">EN</span></button>
             </div>
             <Menu
               mode="horizontal"

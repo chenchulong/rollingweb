@@ -2,12 +2,16 @@
 
 const CarouselJson = [{
     id: 1,
-    alt: '图片描述1',
+    alt: 'rolling',
     url: 'img/img1.jpeg'
 }, {
     id: 2,
-    alt: '图片描述2',
-    url: 'https://zos.alipayobjects.com/rmsportal/gGlUMYGEIvjDOOw.jpg'
+    alt: 'rolling',
+    url: 'img/img2.jpeg'
+}, {
+    id: 3,
+    alt: 'rolling',
+    url: 'img/img3.jpeg'
 }];
 
 export default CarouselJson;

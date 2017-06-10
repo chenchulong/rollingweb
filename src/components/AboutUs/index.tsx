@@ -4,7 +4,7 @@ import { Layout, Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
 const { Header, Footer, Content } = Layout;
 
-const about = require('./about.png');
+const about = require('./about.jpeg');
 import MyHeader from './../MyHeader';
 
 class AboutUs extends React.Component<null, null> {
@@ -38,7 +38,7 @@ class AboutUs extends React.Component<null, null> {
             </div>
           </Content>
           <Footer className="footer">
-            版权所有 © 2017 XiaoChen
+            版权所有 © 2017 Rollin
           </Footer>
         </Layout>
       </div>

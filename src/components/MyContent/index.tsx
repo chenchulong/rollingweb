@@ -41,26 +41,17 @@ class MyContent extends React.Component<null, null> {
                 {newslist}
               </Card>*/}
               <Card title={lang.content.mainProduct} bordered={false}>
-                {
-                  // tslint:disable-next-line:max-line-length 
-                }
-                <img style={{ width: '100%', height: 245 }} src="http://www.sonystyle.com.cn/products/cyber-shot/images/reddot_award_230x172(1).jpg" />
+                <img style={{ width: '100%', height: 245 }} src="img/t4.jpeg" />
               </Card>
             </Col>
             <Col span={8} style={{ padding: 10 }}>
               <Card title={lang.content.mainProduct} bordered={false}>
-                {
-                  // tslint:disable-next-line:max-line-length 
-                }
-                <img style={{ width: '100%', height: 245 }} src="http://www.sonystyle.com.cn/products/cyber-shot/images/reddot_award_230x172(1).jpg" />
+                <img style={{ width: '100%', height: 245 }} src="img/t5.jpeg" />
               </Card>
             </Col>
             <Col span={8} style={{ padding: 10 }}>
               <Card title={lang.content.mainProduct} bordered={false}>
-                {
-                  // tslint:disable-next-line:max-line-length 
-                }
-                <img style={{ width: '100%', height: 245 }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_3eeqyJmqEJlAJEAXdRxhrr8dyFgAZfNVgP3H4puXf6uNSu8a" />
+                <img style={{ width: '100%', height: 245 }} src="img/t6.jpeg" />
 
               </Card>
             </Col>

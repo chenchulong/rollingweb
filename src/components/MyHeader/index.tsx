@@ -70,9 +70,9 @@ class MyHeader extends React.Component<any, any> {
               <Menu.Item key="3">
                 <Link to="/products">{lang.nav.product}</Link>
               </Menu.Item>
-              <Menu.Item key="4">
+              {/*<Menu.Item key="4">
                 <Link to="/news">{lang.nav.news}</Link>
-              </Menu.Item>
+              </Menu.Item>*/}
             </Menu>
           </Col>
         </Row>

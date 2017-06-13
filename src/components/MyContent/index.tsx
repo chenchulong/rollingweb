@@ -2,10 +2,11 @@ import * as React from 'react';
 import './index.css';
 import { Carousel, Card, Row, Col } from 'antd';
 import CarouselJson from './../../data/carouseljson';
-import lang from '../../data/lang'
+import lang from '../../data/lang';
 
 ///轮播图数据
 const carouselList = CarouselJson.map((item, key) =>
+  // tslint:disable-next-line:jsx-wrap-multiline
   <div className="bg" key={key}>
     <img alt={item.alt} src={item.url} />
   </div>

@@ -96,7 +96,7 @@ class Products extends React.Component<null, null> {
             </div>
           </Content>
           <Footer className="footer">
-            版权所有 © 2017 XiaoChen
+            版权所有 © 2017 Rollin
           </Footer>
         </Layout>
       </div >

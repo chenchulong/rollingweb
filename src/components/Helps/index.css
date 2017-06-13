@@ -1,0 +1,23 @@
+.aboutContent {
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 1200px;
+  padding-bottom: 30px;
+  background: #fff;
+}
+
+.pText {
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+  text-indent: 2em;
+}
+
+.textPanel {
+  margin-bottom: 30px;
+}
+
+.helpInfo {
+  margin-top: 20px;
+}

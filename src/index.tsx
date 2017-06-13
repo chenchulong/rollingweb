@@ -5,7 +5,14 @@ import App from './components/App/App';
 import AboutUs from './components/AboutUs';
 import Products from './components/Products';
 import News from './components/News';
+import Helps from './components/Helps';
 import './index.css';
+import { useRouterHistory } from 'react-router';
+import { createHashHistory } from 'history';
+
+const history = useRouterHistory(createHashHistory)({
+  // basename: '/rollingweb'
+})
 
 const routes = [{
   path: '/',
@@ -19,10 +26,14 @@ const routes = [{
 }, {
   path: '/news',
   component: News
+}, {
+  path: '/help',
+  component: Helps
 }];
 
 const app = hake({
-   routes
- });
+  routes,
+  history
+});
 
 app.start();

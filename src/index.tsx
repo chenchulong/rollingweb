@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs';
 import Products from './components/Products';
 import News from './components/News';
 import Helps from './components/Helps';
+import Details from './components/Details';
 import './index.css';
 import { useRouterHistory } from 'react-router';
 import { createHashHistory } from 'history';
@@ -29,6 +30,9 @@ const routes = [{
 }, {
   path: '/help',
   component: Helps
+}, {
+  path: '/details',
+  component: Details
 }];
 
 const app = hake({

@@ -23,8 +23,10 @@ class MyHeader extends React.Component<any, any> {
         current = '2';
         break;
       case '#/products':
+      case '#/details':
         current = '3';
         break;
+
       case '#/news':
         current = '4';
         break;

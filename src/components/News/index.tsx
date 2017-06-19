@@ -16,12 +16,13 @@ const newslist = NewsJson.map((item, key) => (
 
 import MyHeader from './../MyHeader';
 
+// tslint:disable-next-line:no-any
 class News extends React.Component<any, any> {
   constructor() {
     super();
     var newid = '1';
 
-    if(window.location.search != ''){
+    if (window.location.search !== '') {
       var searchKey = window.location.search.split('=');
       newid = searchKey[1];
     }
